@@ -1,0 +1,8 @@
+<div *ngFor="let cliente of clientes">
+    <h3>{{ cliente.nombre }}</h3>
+    <p>{{ cliente.telefono }}</p>
+    <p>{{ cliente.direccion }}</p>
+    <button (click)="editCliente(cliente.id_cliente)">Editar</button>
+    <button (click)="deleteCliente(cliente.id_cliente)">Eliminar</button>
+  </div>
+  
